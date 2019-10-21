@@ -1,0 +1,9 @@
+.page-footer {
+    background-color: $text-main-color;
+    color: #fefefe;
+    padding-top: 100px;
+
+    &__lists {
+        padding-bottom: 40px;
+    }
+}
