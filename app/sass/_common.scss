@@ -18,6 +18,11 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media (max-width: $breakpoint-sm) {
+            margin-right: 10px;
+        }
+    
     }
 
     @media (max-width: $breakpoint-md) {
@@ -35,6 +40,10 @@
     
     &__text {
         padding-bottom: 125px;
+
+        @media (max-width: $breakpoint-md) {
+            padding-bottom: 30px;
+        }    
     }
 }
 
@@ -43,8 +52,8 @@
     &__img {
         width: 100%;
         height: 220px;
+        width: 220px;
         margin-bottom: 75px;
-        margin-left: 70px;
         background: url(../img/icon.png) no-repeat;
         background-size: cover;
 
@@ -57,12 +66,35 @@
         }
 
         @media (max-width: $breakpoint-md) {
-            margin-left: 0;
-        }    
+            margin: 0 auto;
+        }  
     }
 
     &__title {
         padding-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+    }
+}
+
+.about {
+
+    &__img {
+
+        @media (max-width: $breakpoint-md) {
+            max-height: 350px;
+            margin: 0 auto;
+        } 
+
+        @media (max-width: $breakpoint-sm) {
+            max-height: 300px;
+        }    
+
+        @media (max-width: $breakpoint-xs) {
+            max-height: 200px;
+        }    
     }
 }
 
@@ -100,6 +132,10 @@
         font-weight: bold;
         background-color: $color-primary;
         border-radius: 20px 20px 0 0;
+
+        @media (max-width: $breakpoint-md) {
+            padding: 10px 0;
+        }
     }
 
     &__list {
@@ -135,7 +171,7 @@
     }
 
     @media (max-width: $breakpoint-md) {
-        padding: 35px 30px;
+        padding: 30px 20px;
     }
 }
 

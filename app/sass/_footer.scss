@@ -6,4 +6,8 @@
     &__lists {
         padding-bottom: 40px;
     }
+
+    @media (max-width: $breakpoint-md) {
+        padding-top: 20px;
+    }
 }
